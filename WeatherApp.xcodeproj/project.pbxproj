@@ -119,6 +119,7 @@
 		F2DD18F12B022E44001DAA54 /* MockSettingsSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSettingsSceneView.swift; sourceTree = "<group>"; };
 		F2DD18F32B022F60001DAA54 /* SettingsSceneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSceneTests.swift; sourceTree = "<group>"; };
 		F2DD18F52B0235E6001DAA54 /* NotCorrectWeatherResponse2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotCorrectWeatherResponse2.txt; sourceTree = "<group>"; };
+		F2DD18F72B025448001DAA54 /* ReadMe */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +177,7 @@
 				F297C1C72AFBC50F004E65B9 /* Services */,
 				F297C1932AFBB77B004E65B9 /* Assets.xcassets */,
 				F297C1952AFBB77B004E65B9 /* LaunchScreen.storyboard */,
+				F2DD18F72B025448001DAA54 /* ReadMe */,
 				F297C1982AFBB77B004E65B9 /* Info.plist */,
 			);
 			path = WeatherApp;
@@ -693,6 +695,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -720,6 +723,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
