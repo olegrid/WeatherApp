@@ -25,7 +25,7 @@ protocol SettingsServiceProtocol {
     
 }
 
-class SettingsService: SettingsServiceProtocol {
+final class SettingsService: SettingsServiceProtocol {
     
     let storageService: StorageServiceProtocol
     

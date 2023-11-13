@@ -18,7 +18,7 @@ protocol MainSceneViewProtocol: AnyObject {
     
 }
 
-class MainSceneView: UIViewController, MainSceneViewProtocol {
+final class MainSceneView: UIViewController, MainSceneViewProtocol {
     
     private var presenter: MainScenePresenterProtocol?
     @IBOutlet weak var locationNameLabel: UILabel!

@@ -22,7 +22,7 @@ protocol MainScenePresenterProtocol {
     func selectLocation()
 }
 
-class MainScenePresenter: MainScenePresenterProtocol {
+final class MainScenePresenter: MainScenePresenterProtocol {
     
     private weak var view: MainSceneViewProtocol?
     private var networkService: NetworkServiceProtocol

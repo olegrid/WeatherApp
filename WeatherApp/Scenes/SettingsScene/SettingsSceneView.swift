@@ -15,7 +15,7 @@ protocol SettingsSceneViewProtocol: AnyObject {
     func dismissScene()
 }
 
-class SettingsSceneView: UIViewController, SettingsSceneViewProtocol {
+final class SettingsSceneView: UIViewController, SettingsSceneViewProtocol {
     
     private var presenter: SettingsScenePresenterProtocol?
     @IBOutlet weak var tableView: UITableView!

@@ -17,7 +17,7 @@ protocol SettingsScenePresenterProtocol {
     func didSelectLocation(_ location: Location)
 }
 
-class SettingsScenePresenter: SettingsScenePresenterProtocol {
+final class SettingsScenePresenter: SettingsScenePresenterProtocol {
     
     private weak var view: SettingsSceneViewProtocol?
     private var networkService: NetworkServiceProtocol?

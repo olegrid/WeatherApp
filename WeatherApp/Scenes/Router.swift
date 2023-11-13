@@ -15,7 +15,7 @@ protocol RouterProtocol: AnyObject {
     func showSettingsScene()
 }
 
-class Router: RouterProtocol {
+final class Router: RouterProtocol {
     
     private let window: UIWindow
     private var navigationController: UINavigationController?
