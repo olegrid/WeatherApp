@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsSceneView" customModule="WeatherApp" customModuleProvider="target">
+            <connections>
+                <outlet property="activity" destination="wsj-O1-fwN" id="G6l-oP-awA"/>
+                <outlet property="loadingView" destination="hNt-I3-HbP" id="Tp2-eV-bB1"/>
+                <outlet property="tableView" destination="rf2-GP-3IB" id="ni2-us-Gdl"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mvp-Ks-9rq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="wq9-9H-c3l">
+                    <rect key="frame" x="0.0" y="59" width="393" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="icw-a3-yS9"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rf2-GP-3IB">
+                    <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pSZ-HV-9fK"/>
+                        <outlet property="delegate" destination="-1" id="LiY-tM-bI5"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNt-I3-HbP">
+                    <rect key="frame" x="0.0" y="115" width="393" height="703"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wsj-O1-fwN">
+                            <rect key="frame" x="186.66666666666666" y="341.66666666666669" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="wsj-O1-fwN" firstAttribute="centerX" secondItem="hNt-I3-HbP" secondAttribute="centerX" id="BG3-bS-z7D"/>
+                        <constraint firstItem="wsj-O1-fwN" firstAttribute="centerY" secondItem="hNt-I3-HbP" secondAttribute="centerY" id="pCK-PG-5Ha"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rf2-GP-3IB" secondAttribute="bottom" id="Agc-Bq-X4M"/>
+                <constraint firstItem="hNt-I3-HbP" firstAttribute="top" secondItem="wq9-9H-c3l" secondAttribute="bottom" id="FXq-b8-QIk"/>
+                <constraint firstItem="wq9-9H-c3l" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QRx-kW-BhT"/>
+                <constraint firstItem="hNt-I3-HbP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QrY-xj-ut7"/>
+                <constraint firstItem="rf2-GP-3IB" firstAttribute="top" secondItem="wq9-9H-c3l" secondAttribute="bottom" id="WS2-Uo-cZw"/>
+                <constraint firstItem="rf2-GP-3IB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Znq-dc-2Iv"/>
+                <constraint firstItem="rf2-GP-3IB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bQx-Xy-10E"/>
+                <constraint firstItem="wq9-9H-c3l" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dj0-Sn-402"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hNt-I3-HbP" secondAttribute="bottom" id="dxk-Uk-PhY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hNt-I3-HbP" secondAttribute="trailing" id="uR7-F4-w6G"/>
+                <constraint firstItem="wq9-9H-c3l" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="xvT-C2-IDP"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <point key="canvasLocation" x="81.679389312977094" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
